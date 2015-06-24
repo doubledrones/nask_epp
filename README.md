@@ -1,4 +1,6 @@
-# EPP implementation for NASK domain management.
+# nask_epp
+
+EPP implementation for NASK domain management.
 
 ## Usage
 
