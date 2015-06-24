@@ -1,0 +1,286 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN1</clID>\n      <pw>NASK_EPP_PASSWORD1</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 11:59:11 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '481'
+      set-cookie:
+      - JSESSIONID=8789F1EA0815DC7E9BA88AB2ECE8AD93; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1229\" id=\"342052\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1462474614</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 11:59:12 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <command>\n    <create>\n      <host:create xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"\n
+        \     xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\n
+        \       <host:name>host1332313231.example1332313219.pl</host:name><host:addr
+        ip=\"v4\">176.9.20.181</host:addr></host:create>\n    </create>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=8789F1EA0815DC7E9BA88AB2ECE8AD93
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 11:59:12 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '815'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1001\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully; action pending</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1229\" id=\"342052\" />\r\n\t\t<resData>\r\n\t\t\t<host:creData xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\r\n\t\t\t\t<host:name>host1332313231.example1332313219.pl</host:name>\r\n\t\t\t\t<host:crDate>2013-07-05T11:59:12.0Z</host:crDate>\r\n\t\t\t</host:creData>\r\n\t\t</resData>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1434612137</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 11:59:13 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <command>\n    <create>\n      <host:create xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"\n
+        \     xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\n
+        \       <host:name>host1332313232.example1332313219.pl</host:name><host:addr
+        ip=\"v4\">176.9.20.181</host:addr></host:create>\n    </create>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=8789F1EA0815DC7E9BA88AB2ECE8AD93
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 11:59:14 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '815'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1001\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully; action pending</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1229\" id=\"342052\" />\r\n\t\t<resData>\r\n\t\t\t<host:creData xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\r\n\t\t\t\t<host:name>host1332313232.example1332313219.pl</host:name>\r\n\t\t\t\t<host:crDate>2013-07-05T11:59:14.0Z</host:crDate>\r\n\t\t\t</host:creData>\r\n\t\t</resData>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR4733306105</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 11:59:14 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <command>\n    <info>\n      <host:info\n      xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"\n
+        \     xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\n
+        \       <host:name>host1332313231.example1332313219.pl</host:name> </host:info>\n
+        \   </info>\n    <clTRID>ABC-12345</clTRID>\n  </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=8789F1EA0815DC7E9BA88AB2ECE8AD93
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 11:59:15 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '1025'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1229\" id=\"342052\" />\r\n\t\t<resData>\r\n\t\t\t<host:infData xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\r\n\t\t\t\t<host:name>host1332313231.example1332313219.pl</host:name>\r\n\t\t\t\t<host:roid>219951-NASK</host:roid>\r\n\t\t\t\t<host:status
+        s=\"pendingCreate\" lang=\"en\" />\r\n\t\t\t\t<host:addr ip=\"v4\">176.9.20.181</host:addr>\r\n\t\t\t\t<host:clID>NASK_EPP_LOGIN1</host:clID>\r\n\t\t\t\t<host:crID>NASK_EPP_LOGIN1</host:crID>\r\n\t\t\t\t<host:crDate>2013-07-05T11:59:12.0Z</host:crDate>\r\n\t\t\t</host:infData>\r\n\t\t</resData>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR2414765614</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 11:59:16 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <command>\n    <info>\n      <host:info\n      xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"\n
+        \     xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\n
+        \       <host:name>host1332313232.example1332313219.pl</host:name> </host:info>\n
+        \   </info>\n    <clTRID>ABC-12345</clTRID>\n  </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=8789F1EA0815DC7E9BA88AB2ECE8AD93
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 11:59:17 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '1025'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1229\" id=\"342052\" />\r\n\t\t<resData>\r\n\t\t\t<host:infData xmlns:host=\"http://www.dns.pl/nask-epp-schema/host-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/host-2.0 host-2.0.xsd\">\r\n\t\t\t\t<host:name>host1332313232.example1332313219.pl</host:name>\r\n\t\t\t\t<host:roid>219952-NASK</host:roid>\r\n\t\t\t\t<host:status
+        s=\"pendingCreate\" lang=\"en\" />\r\n\t\t\t\t<host:addr ip=\"v4\">176.9.20.181</host:addr>\r\n\t\t\t\t<host:clID>NASK_EPP_LOGIN1</host:clID>\r\n\t\t\t\t<host:crID>NASK_EPP_LOGIN1</host:crID>\r\n\t\t\t\t<host:crDate>2013-07-05T11:59:14.0Z</host:crDate>\r\n\t\t\t</host:infData>\r\n\t\t</resData>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1460554427</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 11:59:17 GMT
+recorded_with: VCR 2.4.0

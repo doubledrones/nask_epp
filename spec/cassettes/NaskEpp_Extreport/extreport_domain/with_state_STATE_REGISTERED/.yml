@@ -1,0 +1,168 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN2:NASK_EPP_PASSWORD_URI_ENCODED2@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN2</clID>\n      <pw>NASK_EPP_PASSWORD2</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QyOmhrN0A2a3Q6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 08:57:16 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '480'
+      set-cookie:
+      - JSESSIONID=7D9CA66675E101975EAD8857D5D74B95; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"271\" id=\"404864\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR6703425475</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 08:57:19 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN2:NASK_EPP_PASSWORD_URI_ENCODED2@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <extension>\n    <extreport:report\n    xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\"\n
+        \   xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0 extreport-2.0.xsd\">\n
+        \     <extreport:domain>\n        <extreport:state>STATE_REGISTERED</extreport:state>\n\n\n
+        \     </extreport:domain>\n<extreport:offset>0</extreport:offset><extreport:limit>50</extreport:limit>\n
+        \   </extreport:report>\n  </extension>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QyOmhrN0A2a3Q6
+      cookie:
+      - JSESSIONID=7D9CA66675E101975EAD8857D5D74B95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 08:57:19 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"271\" id=\"404864\" />\r\n\t\t<extension>\r\n\t\t\t<extreport:reportData
+        xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0
+        extreport-2.0.xsd\">\r\n\t\t\t\t<extreport:domDataRsp>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231360071810.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>863576-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-02-05T13:43:31.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231360071811.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>863577-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-02-05T13:43:38.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>asasddasd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>873629-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-08T16:12:44.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>cienasyasdasd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>873630-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-08T16:13:19.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>tytsdfd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>873631-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-08T16:17:43.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampledomain123123.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>873633-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-08T17:18:51.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>prostydns.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>874907-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-14T13:37:06.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testowwwaaaa123123.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>874909-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-14T13:56:55.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>h666.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875923-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T15:02:09.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>goozzik666.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875927-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T15:25:27.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>h15.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875929-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T15:35:52.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>qwerqasdaz.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875932-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T17:17:34.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>domasdwqezzz.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875933-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T17:17:56.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>goasdasdasd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>875940-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-18T17:49:41.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>example1363774545.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>876374-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-20T10:15:55.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>example1363774920.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>876375-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-20T10:22:11.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>example1369996072.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>876383-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-20T10:53:44.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231360071950.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879682-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:50:04.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231360071951.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879683-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:50:12.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231363471950.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879690-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:52:18.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1231363471951.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879691-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:52:23.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1238844444365.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879698-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:59:13.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1238844444366.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879699-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T12:59:17.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1239144414365.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879718-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T13:23:40.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdzxc1239144414366.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>879719-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-03-30T13:23:44.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampletestariusztestowy1234-1.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>881059-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-07T06:25:43.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampletestariusztestowy1234-2.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>881060-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-07T06:26:04.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampletestariusztestowy1234-3.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>881061-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-07T06:26:14.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampletestariusztestowy1234-4.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>881062-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-07T06:26:23.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampletestariusztestowy1234-5.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>881063-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-07T06:26:32.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testowwwa123r4domenaaa123321112491.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>882140-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-10T14:14:47.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>exampleasdqwezxc.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885021-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:25:45.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>examplqweqwezcas.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885022-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:29:38.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>qweqweasdasd123123.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885027-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:47:44.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>qewqwe12asdaz.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885028-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:49:42.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>eqweqwasaasqw123.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885029-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:55:11.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>qwewqasdz12qwe.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885030-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:56:24.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>asdqwe123.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885031-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T05:57:16.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>jakubguzikmalpa.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>885035-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-04-23T06:11:45.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>guziktest0502.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>886978-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-02T09:16:46.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>dasdczxqwe1231asd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>896735-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-27T12:45:00.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>eqwe123a1111dasdqwe.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>896801-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-27T13:44:03.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testpayu-001.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>896802-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-27T13:47:48.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>tesadqwexcqwe1221azxc.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897197-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T11:37:10.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testplat.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897204-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T11:56:54.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>qweasxzcpqwe123asd.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897220-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T12:18:24.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testasdzxcqeqweasasdasdsadasdda.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897231-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T13:02:02.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testasdzxcqeqweasda1.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897237-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T13:59:45.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testasdzxcqeqweasda2.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897238-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T14:03:41.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t\t<extreport:domData>\r\n\t\t\t\t\t\t<extreport:name>testasdzxcqeqweasda3.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>897249-NASK</extreport:roid>\r\n\t\t\t\t\t\t<extreport:exDate>2014-05-29T14:19:30.0Z</extreport:exDate>\r\n\t\t\t\t\t\t<extreport:statuses
+        />\r\n\t\t\t\t\t</extreport:domData>\r\n\t\t\t\t</extreport:domDataRsp>\r\n\t\t\t\t<extreport:offset>0</extreport:offset>\r\n\t\t\t\t<extreport:limit>50</extreport:limit>\r\n\t\t\t\t<extreport:size>79</extreport:size>\r\n\t\t\t</extreport:reportData>\r\n\t\t</extension>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR3157356520</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 08:57:23 GMT
+recorded_with: VCR 2.4.0

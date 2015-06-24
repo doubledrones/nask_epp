@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN2:NASK_EPP_PASSWORD_URI_ENCODED2@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN2</clID>\n      <pw>NASK_EPP_PASSWORD2</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QyOmhrN0A2a3Q6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:02:15 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '480'
+      set-cookie:
+      - JSESSIONID=D113BA119E0B0E5B17738521F43CFA19; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"271\" id=\"404864\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR4050325462</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:02:19 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN2:NASK_EPP_PASSWORD_URI_ENCODED2@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <extension>\n    <extreport:report\n    xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\"\n
+        \   xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0 extreport-2.0.xsd\">\n<extreport:contact/>\n<extreport:offset>0</extreport:offset><extreport:limit>50</extreport:limit>\n
+        \   </extreport:report>\n  </extension>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QyOmhrN0A2a3Q6
+      cookie:
+      - JSESSIONID=D113BA119E0B0E5B17738521F43CFA19
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:02:15 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"271\" id=\"404864\" />\r\n\t\t<extension>\r\n\t\t\t<extreport:reportData
+        xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0
+        extreport-2.0.xsd\">\r\n\t\t\t\t<extreport:conDataRsp>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359551872</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>707070-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359556580</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>707106-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359561091</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>707217-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX22</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>707474-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359632570</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>707497-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359989004</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709481-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359991329</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709556-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359991599</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709563-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359992182</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709571-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21359994193</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709624-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360000583</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>709680-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360071397</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>710070-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360071456</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>710071-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360071628</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>710074-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360071722</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>710075-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21360071806</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>710076-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX216</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>711939-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX24</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>716987-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX220</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>716990-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX221</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>716995-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX222</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>718901-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX223</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>718935-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX226</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719221-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX228</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719230-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX229</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719231-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX230</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719232-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX231</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719233-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX238</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719546-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX239</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719547-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX240</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>719555-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX241</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>721466-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX242</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>722150-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX243</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>722151-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX244</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>722155-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX245</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>722156-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX249</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>722160-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX255</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>723024-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX21</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>723028-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX29</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724426-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX215</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724667-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX218</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724674-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX219</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724678-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX224</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724681-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX225</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724682-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX227</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724683-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX232</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724684-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX233</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724685-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX234</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724686-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX235</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724687-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t\t<extreport:conData>\r\n\t\t\t\t\t\t<extreport:conId>NASK_EPP_PREFIX237</extreport:conId>\r\n\t\t\t\t\t\t<extreport:roid>724688-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:conData>\r\n\t\t\t\t</extreport:conDataRsp>\r\n\t\t\t\t<extreport:offset>0</extreport:offset>\r\n\t\t\t\t<extreport:limit>50</extreport:limit>\r\n\t\t\t\t<extreport:size>178</extreport:size>\r\n\t\t\t</extreport:reportData>\r\n\t\t</extension>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR7543575742</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:02:20 GMT
+recorded_with: VCR 2.4.0

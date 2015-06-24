@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <hello/>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 07:59:40 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '940'
+      set-cookie:
+      - JSESSIONID=B5A3DC8D8664D330DB5E3BEC23A2E2CD; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<greeting>\r\n\t\t<svID>NASK EPP Registry</svID>\r\n\t\t<svDate>2013-07-04T07:59:40.56Z</svDate>\r\n\t\t<svcMenu>\r\n\t\t\t<version>1.0</version>\r\n\t\t\t<lang>en</lang>\r\n\t\t\t<lang>pl</lang>\r\n\t\t\t<objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\r\n\t\t\t<objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\r\n\t\t\t<objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\r\n\t\t\t<objURI>http://www.dns.pl/nask-epp-schema/future-2.0</objURI>\r\n\t\t\t<svcExtension>\r\n\t\t\t\t<extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\r\n\t\t\t\t<extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\r\n\t\t\t\t<extURI>http://www.dns.pl/nask-epp-schema/secDNS-2.0</extURI>\r\n\t\t\t</svcExtension>\r\n\t\t</svcMenu>\r\n\t</greeting>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 07:59:43 GMT
+recorded_with: VCR 2.4.0

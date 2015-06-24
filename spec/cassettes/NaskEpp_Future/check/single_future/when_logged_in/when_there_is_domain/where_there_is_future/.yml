@@ -1,0 +1,477 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN1</clID>\n      <pw>NASK_EPP_PASSWORD1</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:01 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '481'
+      set-cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1227\" id=\"342052\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR0576056772</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:05 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: UTF-8
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <create>\n      <contact:create\n       xmlns:contact=\"http://www.dns.pl/nask-epp-schema/contact-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/contact-2.0
+        contact-2.0.xsd\">\n        <contact:id>NASK_EPP_PREFIX11360077350</contact:id>\n        <contact:postalInfo
+        type=\"loc\">\n          <contact:name>CONTACT1_NAME</contact:name><contact:addr>\n
+        \           <contact:street>CONTACT1_STREET</contact:street>\n            <contact:city>CONTACT1_CITY</contact:city>\n
+        \           <contact:sp>CONTACT1_PROVINCE</contact:sp>\n            <contact:pc>CONTACT1_ZIP_CODE</contact:pc>\n
+        \           <contact:cc>CONTACT1_COUNTRY</contact:cc>\n          </contact:addr>\n        </contact:postalInfo>\n
+        \       <contact:voice x=\"1234\">CONTACT1_PHONE</contact:voice>\n        <contact:fax></contact:fax>\n
+        \       <contact:email>CONTACT9_EMAIL</contact:email>\n        <contact:authInfo>\n
+        \         <contact:pw>contacssst-6c01-NASK_EPP_PREFIX11360077350</contact:pw>\n        </contact:authInfo>\n
+        \     </contact:create>\n    </create>\n      <extension>\n       <extcon:create
+        xmlns:extcon=\"http://www.dns.pl/nask-epp-schema/extcon-2.0\"\n            xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extcon-2.0
+        extcon-2.0.xsd\">\n          <extcon:individual>1</extcon:individual>\n          <extcon:consentForPublishing>1</extcon:consentForPublishing>\n
+        \       </extcon:create>\n      </extension>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:03 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '710'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2004\">\r\n\t\t\t<msg
+        lang=\"en\">Parameter value range error</msg>\r\n\t\t\t<value>\r\n\t\t\t\t<pw
+        xmlns=\"contact\">contacssst-6c01-NASK_EPP_PREFIX11360077350</pw>\r\n\t\t\t</value>\r\n\t\t\t<extValue>\r\n\t\t\t\t<value>\r\n\t\t\t\t\t<reasonCode
+        xmlns=\"\">8038</reasonCode>\r\n\t\t\t\t</value>\r\n\t\t\t\t<reason lang=\"en\">Contact
+        authorization information already exists</reason>\r\n\t\t\t</extValue>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR3466137257</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:06 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"urn:ietf:params:xml:ns:epp-1.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0
+        epp-1.0.xsd\">\n  <command>\n    <create>\n      <host:create xmlns:host=\"urn:ietf:params:xml:ns:host-1.0\"\n
+        \     xsi:schemaLocation=\"urn:ietf:params:xml:ns:host-1.0 host-1.0.xsd\">\n
+        \       <host:name>ns1.prostydns.pl</host:name><host:addr ip=\"v4\">31.186.86.138</host:addr></host:create>\n
+        \   </create>\n    <clTRID>ABC-12345</clTRID>\n  </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:04 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '403'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2001\">\r\n\t\t\t<msg
+        lang=\"en\">Command syntax error</msg>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR2605532733</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:08 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"urn:ietf:params:xml:ns:epp-1.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0
+        epp-1.0.xsd\">\n  <command>\n    <create>\n      <host:create xmlns:host=\"urn:ietf:params:xml:ns:host-1.0\"\n
+        \     xsi:schemaLocation=\"urn:ietf:params:xml:ns:host-1.0 host-1.0.xsd\">\n
+        \       <host:name>ns2.prostydns.pl</host:name><host:addr ip=\"v4\">176.9.20.181</host:addr></host:create>\n
+        \   </create>\n    <clTRID>ABC-12345</clTRID>\n  </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:05 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '403'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2001\">\r\n\t\t\t<msg
+        lang=\"en\">Command syntax error</msg>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR1226743700</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:08 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <create>\n      <domain:create\n       xmlns:domain=\"http://www.dns.pl/nask-epp-schema/domain-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/domain-2.0 domain-2.0.xsd\">\n
+        \       <domain:name>prostydns.pl</domain:name><domain:ns>ns1.prostydns.pl</domain:ns><domain:ns>ns2.prostydns.pl</domain:ns><domain:period
+        unit=\"y\">1</domain:period><domain:registrant>NASK_EPP_PREFIX11360077350</domain:registrant><domain:contact
+        type=\"tech\">NASK_EPP_PREFIX11360077350</domain:contact><domain:authInfo>\n          <domain:pw>xxxxxxxx</domain:pw>\n
+        \       </domain:authInfo>\n      </domain:create>\n    </create>\n    <extension>\n
+        \     <extdom:create xmlns:extdom=\"http://www.dns.pl/nask-epp-schema/extdom-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extdom-2.0 extdom-2.0.xsd\"><extdom:reason>nice
+        name</extdom:reason></extdom:create>\n    </extension>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:06 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '687'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2304\">\r\n\t\t\t<msg
+        lang=\"en\">Object status prohibits operation</msg>\r\n\t\t\t<value>\r\n\t\t\t\t<name
+        xmlns=\"domain\">prostydns.pl</name>\r\n\t\t\t</value>\r\n\t\t\t<extValue>\r\n\t\t\t\t<value>\r\n\t\t\t\t\t<reasonCode
+        xmlns=\"\">9076</reasonCode>\r\n\t\t\t\t</value>\r\n\t\t\t\t<reason lang=\"en\">Domain
+        exists in state REGISTERED</reason>\r\n\t\t\t</extValue>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR7236370217</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:09 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <create>\n      <domain:create\n       xmlns:domain=\"http://www.dns.pl/nask-epp-schema/domain-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/domain-2.0 domain-2.0.xsd\">\n
+        \       <domain:name>example1360077350.pl</domain:name><domain:ns>ns1.prostydns.pl</domain:ns><domain:ns>ns2.prostydns.pl</domain:ns><domain:period
+        unit=\"y\">1</domain:period><domain:registrant>NASK_EPP_PREFIX11360077350</domain:registrant><domain:contact
+        type=\"tech\">NASK_EPP_PREFIX11360077350</domain:contact><domain:authInfo>\n          <domain:pw>yyyyyyyy1360077350</domain:pw>\n
+        \       </domain:authInfo>\n      </domain:create>\n    </create>\n    <extension>\n
+        \     <extdom:create xmlns:extdom=\"http://www.dns.pl/nask-epp-schema/extdom-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extdom-2.0 extdom-2.0.xsd\"><extdom:reason>nice
+        name</extdom:reason></extdom:create>\n    </extension>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:06 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '695'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2304\">\r\n\t\t\t<msg
+        lang=\"en\">Object status prohibits operation</msg>\r\n\t\t\t<value>\r\n\t\t\t\t<name
+        xmlns=\"domain\">example1360077350.pl</name>\r\n\t\t\t</value>\r\n\t\t\t<extValue>\r\n\t\t\t\t<value>\r\n\t\t\t\t\t<reasonCode
+        xmlns=\"\">9076</reasonCode>\r\n\t\t\t\t</value>\r\n\t\t\t\t<reason lang=\"en\">Domain
+        exists in state REGISTERED</reason>\r\n\t\t\t</extValue>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR2625412726</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:10 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <create>\n      <future:create\n       xmlns:future=\"http://www.dns.pl/nask-epp-schema/future-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/future-2.0 future-2.0.xsd\">\n
+        \       <future:name>example1360077350.pl</future:name>\n        <future:period
+        unit=\"y\">3</future:period>\n        <future:registrant>NASK_EPP_PREFIX11360077350</future:registrant>\n
+        \        <future:authInfo>\n           <future:pw>fyyyyyyyyyx1360077350</future:pw>\n
+        \        </future:authInfo>\n       </future:create>\n    </create>\n       <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:09 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '655'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2302\">\r\n\t\t\t<msg
+        lang=\"en\">Object exists</msg>\r\n\t\t\t<value>\r\n\t\t\t\t<name xmlns=\"future\">example1360077350.pl</name>\r\n\t\t\t</value>\r\n\t\t\t<extValue>\r\n\t\t\t\t<value>\r\n\t\t\t\t\t<reasonCode
+        xmlns=\"\">4002</reasonCode>\r\n\t\t\t\t</value>\r\n\t\t\t\t<reason lang=\"en\">Future
+        exists</reason>\r\n\t\t\t</extValue>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1244117541</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:12 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <check>\n      <future:check\n       xmlns:future=\"http://www.dns.pl/nask-epp-schema/future-2.0\"\n
+        \      xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/future-2.0 future-2.0.xsd\"><future:name>example1360077350.pl</future:name></future:check>\n
+        \   </check>\n<clTRID>ABC-12345</clTRID>\n  </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=F007E83E5CD6CD6CF44E8898F7CDE1BF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 09:22:09 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '837'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1227\" id=\"342052\" />\r\n\t\t<resData>\r\n\t\t\t<future:chkData
+        xmlns:future=\"http://www.dns.pl/nask-epp-schema/future-2.0\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/future-2.0
+        future-2.0.xsd\">\r\n\t\t\t\t<future:cd>\r\n\t\t\t\t\t<future:name avail=\"false\">example1360077350.pl</future:name>\r\n\t\t\t\t\t<future:reason>4002</future:reason>\r\n\t\t\t\t</future:cd>\r\n\t\t\t</future:chkData>\r\n\t\t</resData>\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1277017473</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 09:22:13 GMT
+recorded_with: VCR 2.4.0

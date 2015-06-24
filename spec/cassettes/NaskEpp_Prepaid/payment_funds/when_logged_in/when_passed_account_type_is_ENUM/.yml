@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN1</clID>\n      <pw>NASK_EPP_PASSWORD1</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 13:44:11 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '481'
+      set-cookie:
+      - JSESSIONID=62B99DBF48A632303D865409B4882ACD; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1228\" id=\"342053\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR1611026657</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 13:44:11 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n
+        \ xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\"> <extension>\n  <extreport:report\n  xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0 extreport-2.0.xsd\">\n
+        \                   <extreport:prepaid>\n                          <extreport:paymentFunds>\n
+        \ <extreport:accountType>domain</extreport:accountType>\n                          </extreport:paymentFunds>\n
+        \                   </extreport:prepaid>\n  <extreport:offset>0</extreport:offset>\n
+        \ <extreport:limit>50</extreport:limit> </extreport:report>\n        </extension>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=62B99DBF48A632303D865409B4882ACD
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 13:44:12 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '1031'
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1228\" id=\"342053\" />\r\n\t\t<extension>\r\n\t\t\t<extreport:reportData
+        xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0
+        extreport-2.0.xsd\">\r\n\t\t\t\t<extreport:paymentFundsDataRsp>\r\n\t\t\t\t\t<extreport:paymentFundsData>\r\n\t\t\t\t\t\t<extreport:currentBalance>245610.7</extreport:currentBalance>\r\n\t\t\t\t\t</extreport:paymentFundsData>\r\n\t\t\t\t</extreport:paymentFundsDataRsp>\r\n\t\t\t\t<extreport:offset>0</extreport:offset>\r\n\t\t\t\t<extreport:limit>50</extreport:limit>\r\n\t\t\t\t<extreport:size>1</extreport:size>\r\n\t\t\t</extreport:reportData>\r\n\t\t</extension>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR4725634157</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 13:44:12 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<epp
+        xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n     xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \    xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0 epp-2.0.xsd\">\n
+        \ <command>\n    <login>\n      <clID>NASK_EPP_LOGIN1</clID>\n      <pw>NASK_EPP_PASSWORD1</pw>\n
+        \     <options>\n        <version>1.0</version>\n        <lang>en</lang>\n
+        \     </options>\n      <svcs>\n        <objURI>http://www.dns.pl/nask-epp-schema/contact-2.0</objURI>\n
+        \       <objURI>http://www.dns.pl/nask-epp-schema/host-2.0</objURI>\n        <objURI>http://www.dns.pl/nask-epp-schema/domain-2.0</objURI>\n
+        \       <svcExtension>\n          <extURI>http://www.dns.pl/nask-epp-schema/extcon-2.0</extURI>\n
+        \         <extURI>http://www.dns.pl/nask-epp-schema/extdom-2.0</extURI>\n
+        \       </svcExtension>\n      </svcs>\n    </login>\n    <clTRID>ABC-12345</clTRID>\n
+        \ </command>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 08:57:24 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '481'
+      set-cookie:
+      - JSESSIONID=D9AA2EE0D91D92308C413B770EF9EE19; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1210\" id=\"342052\" />\r\n\t\t<trID>\r\n\t\t\t<clTRID>ABC-12345</clTRID>\r\n\t\t\t<svTRID>PR2520312220</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 08:57:29 GMT
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\n  <extension>\n    <extreport:report\n    xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\"\n
+        \   xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0 extreport-2.0.xsd\">\n<extreport:host/>\n<extreport:offset>0</extreport:offset><extreport:limit>50</extreport:limit>\n
+        \   </extreport:report>\n  </extension>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+      cookie:
+      - JSESSIONID=D9AA2EE0D91D92308C413B770EF9EE19
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Jul 2013 08:57:26 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"1000\">\r\n\t\t\t<msg
+        lang=\"en\">Command completed successfully</msg>\r\n\t\t</result>\r\n\t\t<msgQ
+        count=\"1210\" id=\"342052\" />\r\n\t\t<extension>\r\n\t\t\t<extreport:reportData
+        xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0
+        extreport-2.0.xsd\">\r\n\t\t\t\t<extreport:hosDataRsp>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096687.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173116-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096688.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173117-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096691.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173120-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>ns1174.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>172404-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346094831.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173041-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096785.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173114-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096686.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173115-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098307.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173194-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098311.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173210-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095586.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173067-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095495.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173075-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098234.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173198-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095049.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173054-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095050.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173055-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346092440.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173003-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346092468.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173010-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095646.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173086-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095745.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173090-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098334.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173224-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098330.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173228-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346097537.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173187-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346091602.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>172966-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346091609.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>172973-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346092633.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173016-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346092635.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173018-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346096692.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173112-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346098290.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173193-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095497.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173069-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346095494.example.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173074-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132106.example1346132101.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173542-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135220.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173609-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135221.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173610-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132112.example1346132099.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173537-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346134799.example1346134795.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173576-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346134803.example1346134795.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173580-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135224.example1346135212.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173602-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132103.example1346132101.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173539-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135216.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173605-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135219.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173608-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132111.example1346132099.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173536-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346134802.example1346134795.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173579-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132171.example1346132161.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173548-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135222.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173611-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132107.example1346132101.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173543-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135225.example1346135212.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173603-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135218.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173607-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346135223.example1346135214.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173612-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346132102.example1346132101.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173538-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346134799.example1346134787.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173569-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t\t<extreport:hosData>\r\n\t\t\t\t\t\t<extreport:name>host1346134799.example1346134789.pl</extreport:name>\r\n\t\t\t\t\t\t<extreport:roid>173571-NASK</extreport:roid>\r\n\t\t\t\t\t</extreport:hosData>\r\n\t\t\t\t</extreport:hosDataRsp>\r\n\t\t\t\t<extreport:offset>0</extreport:offset>\r\n\t\t\t\t<extreport:limit>50</extreport:limit>\r\n\t\t\t\t<extreport:size>548</extreport:size>\r\n\t\t\t</extreport:reportData>\r\n\t\t</extension>\r\n\t\t<trID>\r\n\t\t\t<svTRID>PR5560446524</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jul 2013 08:57:30 GMT
+recorded_with: VCR 2.4.0

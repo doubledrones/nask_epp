@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://NASK_EPP_LOGIN1:NASK_EPP_PASSWORD_URI_ENCODED1@qregistry.nask.waw.pl/registry/epp
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"\n
+        \ xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\"> <extension>\n  <extreport:report\n  xmlns:extreport=\"http://www.dns.pl/nask-epp-schema/extreport-2.0\"
+        xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/extreport-2.0 extreport-2.0.xsd\">\n
+        \                   <extreport:prepaid>\n                          <extreport:paymentFunds>\n
+        \ <extreport:accountType>domain</extreport:accountType>\n                          </extreport:paymentFunds>\n
+        \                   </extreport:prepaid>\n  <extreport:offset>0</extreport:offset>\n
+        \ <extreport:limit>50</extreport:limit> </extreport:report>\n        </extension>\n</epp>"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic cHJvc3R5ZG5zLXRlc3QxOmc4bj8pYylx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 Jul 2013 13:44:08 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-powered-by:
+      - Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache
+      expires:
+      - '0'
+      content-language:
+      - pl
+      content-type:
+      - text/xml;charset=UTF-8
+      content-length:
+      - '401'
+      set-cookie:
+      - JSESSIONID=4E6E612183CA7250CF696C9F18F961CA; Path=/registry
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<epp xmlns=\"http://www.dns.pl/nask-epp-schema/epp-2.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.dns.pl/nask-epp-schema/epp-2.0
+        epp-2.0.xsd\">\r\n\t<response>\r\n\t\t<result code=\"2002\">\r\n\t\t\t<msg
+        lang=\"en\">Command use error</msg>\r\n\t\t</result>\r\n\t\t<trID>\r\n\t\t\t<svTRID>TRN5723166226</svTRID>\r\n\t\t</trID>\r\n\t</response>\r\n</epp>\r\n\r\n\r\n"
+    http_version: '1.1'
+  recorded_at: Fri, 05 Jul 2013 13:44:09 GMT
+recorded_with: VCR 2.4.0
